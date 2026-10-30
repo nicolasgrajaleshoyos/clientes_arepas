@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-stone-900 transition-colors dark:bg-stone-900 dark:text-stone-100;
+  }
+}
+
+@layer components {
+  .input {
+    @apply w-full rounded-lg border border-stone-300 bg-white px-4 py-2 text-stone-900 focus:border-brand-red focus:outline-none focus:ring-1 focus:ring-brand-red dark:border-stone-600 dark:bg-stone-800 dark:text-stone-100;
+  }
+}
